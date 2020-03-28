@@ -3,7 +3,7 @@
     class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen"
     :class="theme"
   >
-    <header class="border-t-14 border-green-700">
+    <header class="border-t-14 border-green-400">
       <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
         <div>
           <g-link to="/">
