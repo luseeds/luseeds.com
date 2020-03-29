@@ -7,11 +7,17 @@
     >
       <path :d="variation.path" class="fill-current" />
     </svg>
-    <h3 :class="`bg-${color} text-center text-4xl text-gray-200 uppercase relative z-10`">{{title}}</h3>
+    <h3
+      :class="
+        `bg-${color} text-center text-4xl text-gray-100 uppercase relative z-20 -mt-1 sm:-mt-4`
+      "
+    >
+      {{ title }}
+    </h3>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       :viewBox="variation.viewBox"
-      :class="`relative z-10 text-${color} transform rotate-180`"
+      :class="`relative z-10 text-${color} -mt-1 sm:-mt-4 transform rotate-180`"
     >
       <path :d="variation.path" class="fill-current" />
     </svg>
