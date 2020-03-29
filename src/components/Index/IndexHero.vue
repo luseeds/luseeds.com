@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="sm:absolute top-0 right-0 w-full sm:w-2/3 lg:w-1/2">
-        <g-image src="../../../content/assets/cover.jpg" alt="hero" />
+        <g-image src="~/../content/assets/cover.jpg" quality="100" alt="hero" />
       </div>
     </div>
   </section>

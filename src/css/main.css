@@ -97,6 +97,14 @@ nav .active {
   border: 0;
 }
 
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.grayscale:hover {
+  filter: grayscale(0%);
+}
+
 /* purgecss end ignore */
 
 @tailwind utilities;

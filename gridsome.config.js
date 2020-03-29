@@ -20,8 +20,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "content/projects/**/*.md",
-        typeName: "Project"
+        typeName: "Project",
+        path: "./content/projects/**/*.md"
       }
     },
     {
@@ -31,6 +31,9 @@ module.exports = {
       }
     }
   ],
+  templates: {
+    Project: "/projects/:path"
+  },
   transformers: {
     remark: {
       externalLinksTarget: "_blank",

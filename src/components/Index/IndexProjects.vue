@@ -18,41 +18,50 @@
         <dots-triangle variant="right" class="text-green-400" />
 
         <div class="grid sm:grid-cols-2 gap-4">
-          <div
-            class="group hover:shadow-xl max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 mx-auto sm:mx-0 cursor-pointer"
+          <g-link
+            v-for="project in $static.projects.edges"
+            :key="project.node.key"
+            :to="project.node.path"
           >
-            <g-image
-              src="../../../content/assets/cover.jpg"
-              class="w-full h-40 object-cover"
-              alt="wysba"
-            />
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-1">WYSBA</div>
-              <p class="text-sm mt-2 tracking-tight font-bold text-gray-600">
-                Will you still be alive?
-              </p>
+            <div
+              class="group hover:shadow-xl max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 mx-auto sm:mx-0 cursor-pointer"
+            >
+              <g-image
+                :src="project.node.image"
+                class="w-full h-64 object-cover grayscale"
+                alt="wysba"
+              />
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-1">
+                  {{ project.node.title }}
+                </div>
+                <p class="text-sm mt-2 tracking-tight font-bold text-gray-600">
+                  {{ project.node.excerpt }}
+                </p>
+              </div>
             </div>
-          </div>
-          <div
-            class="group hover:shadow-xl max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 mx-auto sm:mx-0 cursor-pointer"
-          >
-            <g-image
-              src="../../../content/assets/cover.jpg"
-              class="w-full h-40 object-cover"
-              alt="wysba"
-            />
-            <div class="px-6 py-4">
-              <div class="font-bold text-xl mb-1">Animal Kill Counter</div>
-              <p class="text-sm mt-2 tracking-tight font-bold text-gray-600">
-                See how many animals die every seconds
-              </p>
-            </div>
-          </div>
+          </g-link>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<static-query>
+query allFeaturedProjects {
+  projects: allProject {
+    edges {
+      node {
+        id
+        title
+        excerpt
+        image
+        path
+      }
+    }
+  }
+}
+</static-query>
 
 <script>
 import SectionDelimiter from "../SectionDelimiter"
