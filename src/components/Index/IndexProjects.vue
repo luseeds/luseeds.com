@@ -12,7 +12,7 @@
         class="container-inner mx-auto text-xl border-gray-300 border-dotted border-b-8 pb-16 mb-16 relative"
       >
         <h2 class="font-bold mb-6" id="projects">
-          Here are some projects we've developed:
+          Here are some projects we've released:
         </h2>
 
         <dots-triangle variant="right" class="text-green-400" />
