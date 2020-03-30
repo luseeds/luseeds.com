@@ -1,7 +1,7 @@
 <template>
-  <a
-    href="#"
-    class="text-copy-primary hover:text-gray-600"
+  <button
+    class="text-copy-primary inline hover:text-gray-600"
+    aria-label="Toggle theme"
     @click.prevent="toggleTheme"
   >
     <svg
@@ -35,7 +35,7 @@
         d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
       />
     </svg>
-  </a>
+  </button>
 </template>
 
 <script>

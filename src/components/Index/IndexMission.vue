@@ -2,8 +2,8 @@
   <div>
     <section-delimiter
       title="Mission"
-      color="green-500"
-      unpurgecss="text-green-500 bg-green-500"
+      color="green-600"
+      unpurgecss="text-green-600 bg-green-600"
       class="-mt-8 sm:mt-auto md:-mt-16 lg:mt-16"
     />
     <div class="container-inner mx-auto mt-12">

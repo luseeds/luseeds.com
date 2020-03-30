@@ -1,17 +1,14 @@
 <template>
-  <footer class="bg-green-700 text-gray-100">
-    <div
-      class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8"
-    >
-      <a href="/sitemap.xml" class="text-gray-100 hover:text-gray-400"
-        >Sitemap</a
-      >
+  <footer class="bg-green-700">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
+      <a href="/sitemap.xml" class="text-white hover:text-gray-400">Sitemap</a>
       <ul>
         <li class="mt-4">
           <a
             href="https://github.com/luseeds"
             target="_blank"
-            class="text-gray-100 hover:text-gray-400 flex items-center"
+            rel="noopener"
+            class="text-white hover:text-gray-400 flex items-center"
           >
             <svg
               width="20"

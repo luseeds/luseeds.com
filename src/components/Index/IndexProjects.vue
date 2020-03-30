@@ -2,16 +2,16 @@
   <div>
     <section-delimiter
       title="Projects"
-      color="green-500"
+      color="green-600"
       variant="wavy"
       class="-mt-16"
-      unpurgecss="text-green-500 bg-green-500"
+      unpurgecss="text-green-600 bg-green-600"
     />
     <div class="overflow-x-hidden">
       <div
         class="container-inner mx-auto text-xl border-gray-300 border-dotted border-b-8 pb-16 mb-16 relative"
       >
-        <h2 class="font-bold mb-6" id="projects">Here are some projects we've released:</h2>
+        <h3 class="font-bold mb-6" id="projects">Here are some projects we've released:</h3>
 
         <dots-triangle variant="right" class="text-green-400" />
 
