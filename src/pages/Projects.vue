@@ -1,22 +1,20 @@
 <template>
   <Layout>
     <div class="container-inner mx-auto py-16">
+      <h1 class="text-6xl text-center mb-8 text-green-900">Projects</h1>
       <div
         v-for="project in $page.projects.edges"
         :key="project.id"
         class="project border-gray-400 border-b mb-12"
       >
         <h2 class="text-3xl font-bold">
-          <g-link :to="project.node.path" class="text-copy-primary">
-            {{
-            project.node.title
-            }}
-          </g-link>
+          <g-link :to="project.node.path" class="text-copy-primary">{{ project.node.title }}</g-link>
         </h2>
-        <div class="text-copy-secondary mb-4">
+        <g-link :to="project.node.path">
+          <g-image :src="project.node.image" :alt="project.node.title" />
+        </g-link>
+        <div class="text-copy-secondary mt-8 mb-4">
           <span>{{ project.node.date }}</span>
-          <span>&middot;</span>
-          <span>{{ project.node.timeToRead }} min read</span>
         </div>
 
         <div class="text-lg mb-4">{{ project.node.summary }}</div>
@@ -49,10 +47,10 @@ query Projects ($page: Int) {
       node {
         id
         title
-        date (format: "MMMM D, Y")
+        date (format: "DD MMMM Y")
         summary
-        timeToRead
         path
+        image
       }
     }
   }
