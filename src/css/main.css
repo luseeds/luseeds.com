@@ -82,6 +82,10 @@ nav .active {
   @apply bg-green-300;
 }
 
+.grayscale {
+  filter: grayscale(100%);
+}
+
 /* purgecss end ignore */
 
 @tailwind utilities;
