@@ -1,9 +1,7 @@
 <template>
   <div class="overflow-x-hidden">
     <div class="container-inner mx-auto text-xl mb-16 relative">
-      <h2 class="font-bold mb-6" id="about">
-        Want to join / contribute / create?
-      </h2>
+      <h2 class="font-bold mb-6" id="about">Want to join / contribute / create?</h2>
 
       <dots-triangle class="text-green-400" />
 
@@ -20,15 +18,14 @@
           the beginning and luseeds is constantly evolving. You can be a
           creator, a developer, a designer, a writer or any profile at all,
           there will be a place for you.
-          <br />
-          If you have any project idea let's make it real.
+          <br />If you have any project idea let's make it real.
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import DotsTriangle from "../DotsTriangle"
+import DotsTriangle from "~/components/DotsTriangle"
 
 export default {
   components: {

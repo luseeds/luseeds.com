@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import IndexHero from "../components/Index/IndexHero"
-import IndexMission from "../components/Index/IndexMission"
-import IndexProjects from "../components/Index/IndexProjects"
-import IndexContribute from "../components/Index/IndexContribute"
-import IndexContact from "../components/Index/IndexContact"
+import IndexHero from "~/components/Index/IndexHero"
+import IndexMission from "~/components/Index/IndexMission"
+import IndexProjects from "~/components/Index/IndexProjects"
+import IndexContribute from "~/components/Index/IndexContribute"
+import IndexContact from "~/components/Index/IndexContact"
 
 export default {
   metaInfo: {

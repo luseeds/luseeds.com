@@ -48,9 +48,9 @@ query allFeaturedProjects {
 </static-query>
 
 <script>
-import SectionDelimiter from "../SectionDelimiter"
-import DotsTriangle from "../DotsTriangle"
-import Project from "../Project"
+import SectionDelimiter from "~/components/SectionDelimiter"
+import DotsTriangle from "~/components/DotsTriangle"
+import Project from "~/components/Project"
 
 export default {
   components: {

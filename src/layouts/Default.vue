@@ -55,8 +55,8 @@ query {
 </static-query>
 
 <script>
-import ThemeSwitcher from "../components/ThemeSwitcher"
-import Footer from "../components/Footer"
+import ThemeSwitcher from "~/components/ThemeSwitcher"
+import Footer from "~/components/Footer"
 
 export default {
   components: {
@@ -83,4 +83,4 @@ export default {
 }
 </script>
 
-<style src="../css/main.css" />
+<style src="~/css/main.css" />

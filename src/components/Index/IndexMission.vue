@@ -15,12 +15,13 @@
         question a subject or an information.
         <br />
         <br />Sharing knowledge, raising awarness, taking action are the best
-        way to improve our world. <br />Let's act now.
+        way to improve our world.
+        <br />Let's act now.
       </div>
 
       <div class="flex justify-between items-center py-6">
         <div class="max-w-lg mx-auto p-8 sm:py-0">
-          <g-image src="../../../static/walking.svg" alt="browser" />
+          <g-image src="../../../static/walking.svg" alt="walking" />
         </div>
       </div>
     </div>
@@ -28,7 +29,7 @@
 </template>
 
 <script>
-import SectionDelimiter from "../SectionDelimiter"
+import SectionDelimiter from "~/components/SectionDelimiter"
 
 export default {
   components: {

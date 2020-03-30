@@ -7,9 +7,11 @@
         class="project border-gray-400 border-b mb-12"
       >
         <h2 class="text-3xl font-bold">
-          <g-link :to="project.node.path" class="text-copy-primary">{{
+          <g-link :to="project.node.path" class="text-copy-primary">
+            {{
             project.node.title
-          }}</g-link>
+            }}
+          </g-link>
         </h2>
         <div class="text-copy-secondary mb-4">
           <span>{{ project.node.date }}</span>
@@ -20,9 +22,7 @@
         <div class="text-lg mb-4">{{ project.node.summary }}</div>
 
         <div class="mb-8">
-          <g-link :to="project.node.path" class="font-bold uppercase"
-            >Read More</g-link
-          >
+          <g-link :to="project.node.path" class="font-bold uppercase">Read More</g-link>
         </div>
       </div>
       <!-- end project -->
@@ -60,7 +60,7 @@ query Projects ($page: Int) {
 </page-query>
 
 <script>
-import PaginationProjects from "../components/PaginationProjects"
+import PaginationProjects from "~/components/PaginationProjects"
 
 export default {
   metaInfo: {
