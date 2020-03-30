@@ -15,13 +15,12 @@
         question a subject or an information.
         <br />
         <br />Sharing knowledge, raising awarness, taking action are the best
-        way to improve our world.
-        <br />Let's act now.
+        way to improve our world. <br />Let's act now.
       </div>
 
       <div class="flex justify-between items-center py-6">
-        <div class="max-w-lg mx-auto p-8 sm:py-0">
-          <g-image src="../../../static/walking.svg" alt="walking" />
+        <div class="max-w-lg mx-auto p-8 sm:py-0 w-full">
+          <WalkingSvg class="w-full h-auto" />
         </div>
       </div>
     </div>
@@ -30,10 +29,12 @@
 
 <script>
 import SectionDelimiter from "~/components/SectionDelimiter"
+import WalkingSvg from "~/../static/walking.svg"
 
 export default {
   components: {
-    SectionDelimiter
+    SectionDelimiter,
+    WalkingSvg
   }
 }
 </script>
