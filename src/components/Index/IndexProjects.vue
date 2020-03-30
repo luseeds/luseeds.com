@@ -11,36 +11,20 @@
       <div
         class="container-inner mx-auto text-xl border-gray-300 border-dotted border-b-8 pb-16 mb-16 relative"
       >
-        <h2 class="font-bold mb-6" id="projects">
-          Here are some projects we've released:
-        </h2>
+        <h2 class="font-bold mb-6" id="projects">Here are some projects we've released:</h2>
 
         <dots-triangle variant="right" class="text-green-400" />
 
-        <div class="grid sm:grid-cols-2 gap-4">
-          <g-link
+        <div class="grid md:grid-cols-2 gap-12 justify-center">
+          <project
             v-for="project in $static.projects.edges"
             :key="project.node.key"
-            :to="project.node.path"
-          >
-            <div
-              class="group hover:shadow-xl max-w-sm rounded overflow-hidden shadow-lg bg-gray-100 mx-auto sm:mx-0 cursor-pointer"
-            >
-              <g-image
-                :src="project.node.image"
-                class="w-full h-64 object-cover grayscale"
-                alt="wysba"
-              />
-              <div class="px-6 py-4">
-                <div class="font-bold text-xl mb-1">
-                  {{ project.node.title }}
-                </div>
-                <p class="text-sm mt-2 tracking-tight font-bold text-gray-600">
-                  {{ project.node.excerpt }}
-                </p>
-              </div>
-            </div>
-          </g-link>
+            :path="project.node.path"
+            :image="project.node.image"
+            :imageAlt="project.node.title"
+            :title="project.node.title"
+            :excerpt="project.node.excerpt"
+          />
         </div>
       </div>
     </div>
@@ -66,11 +50,13 @@ query allFeaturedProjects {
 <script>
 import SectionDelimiter from "../SectionDelimiter"
 import DotsTriangle from "../DotsTriangle"
+import Project from "../Project"
 
 export default {
   components: {
     SectionDelimiter,
-    DotsTriangle
+    DotsTriangle,
+    Project
   }
 }
 </script>

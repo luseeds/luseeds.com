@@ -16,18 +16,12 @@ module.exports = {
       background: {
         primary: "var(--bg-background-primary)",
         secondary: "var(--bg-background-secondary)",
-        tertiary: "var(--bg-background-tertiary)",
-
-        form: "var(--bg-background-form)"
+        tertiary: "var(--bg-background-tertiary)"
       },
 
       copy: {
         primary: "var(--text-copy-primary)",
         secondary: "var(--text-copy-hover)"
-      },
-
-      "border-color": {
-        primary: "var(--border-border-color-primary)"
       },
 
       transparent: "transparent",
