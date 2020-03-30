@@ -2,7 +2,7 @@
   <g-link
     :to="path"
     :class="
-      `relative z-10 blob-shadow ${
+      `blob-shadow ${
         inProgress ? 'grayscale pointer-events-none' : ''
       }`
     "
@@ -13,9 +13,7 @@
       <g-image :src="image" class="w-full h-64 p-4" :alt="imageAlt" />
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-1">{{ title }}</div>
-        <p class="text-sm mt-2 tracking-tight font-bold text-gray-700">
-          {{ excerpt }}
-        </p>
+        <p class="text-sm mt-2 tracking-tight font-bold text-gray-700">{{ excerpt }}</p>
       </div>
     </div>
   </g-link>

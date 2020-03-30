@@ -65,6 +65,10 @@ nav .active {
 }
 
 @screen sm {
+  .blob-shadow {
+    @apply relative z-10;
+  }
+
   .blob-shadow::before {
     content: "";
     position: absolute;
@@ -76,10 +80,10 @@ nav .active {
     border-radius: 63% 37% 83% 17% / 30% 73% 27% 70%;
     @apply bg-green-200;
   }
-}
 
-.blob-shadow:hover::before {
-  @apply bg-green-300;
+  .blob-shadow:hover::before {
+    @apply bg-green-300;
+  }
 }
 
 .grayscale {
