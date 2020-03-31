@@ -1,11 +1,14 @@
 ---
 title: WYSBA
-excerpt: Will you still be alive?
+excerpt: Would you still be alive?
 path: /wysba
-date: 2020-01-01
-summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
+order: 1
+summary: A website to compare your lifespan to the one of a farmed animal. The goal is to raise awarness towards farmed animals that are killed at a very young age, way earlier than their natural lifespan.
 image: ./wysba.png
 url: https://wysba.luseeds.com
 ---
 
-Farmed animals are killed at a very young age. If you were one, would you still be alive? Find the answer.
+A website to compare your lifespan to the one of a farmed animal.  
+The goal is to raise awarness towards farmed animals that are killed at a very young age, way earlier than their natural lifespan.
+
+If you were one, would you still be alive? Type in your age and find out the answer.

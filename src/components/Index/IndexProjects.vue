@@ -28,7 +28,7 @@
 
 <static-query>
 query allFeaturedProjects {
-  projects: allProject {
+  projects: allProject (sortBy: "order", order: DESC) {
     edges {
       node {
         id

@@ -34,7 +34,7 @@
 
 <page-query>
 query Projects ($page: Int) {
-  projects: allProject (sortBy: "date", order: DESC, perPage: 3, page: $page) @paginate {
+  projects: allProject (sortBy: "order", order: DESC, perPage: 3, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages
