@@ -10,7 +10,7 @@
   --bg-background-accent: rgb(56, 161, 105);
 
   --text-copy-primary: #2d3748;
-  --text-copy-secondary: rgb(250, 250, 250);
+  --text-copy-secondary: rgb(254, 254, 254);
   --text-copy-accent: rgb(56, 161, 105);
 }
 
@@ -55,11 +55,11 @@
 }
 
 a {
-  @apply text-green-700 font-bold;
+  @apply text-green-800 font-bold;
 }
 
 a:hover {
-  @apply text-green-800;
+  @apply text-green-900;
 }
 
 nav .active {
