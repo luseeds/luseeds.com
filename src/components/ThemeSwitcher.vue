@@ -5,7 +5,7 @@
     @click.prevent="toggleTheme"
   >
     <svg
-      v-if="theme === 'theme-light'"
+      v-if="theme === 'light'"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -39,19 +39,39 @@
 </template>
 
 <script>
+const THEME = { LIGHT: "light", DARK: "dark" }
+const DEFAULT_THEME = THEME.LIGHT
+
+const getInitialTheme = () => {
+  // First look for a user defined value in the local storage
+  let theme = localStorage.getItem("theme")
+  // If none is defined, check the prefers-color-scheme
+  if (
+    !theme &&
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    theme = THEME.DARK
+  }
+  // If no preferences, default to default theme
+  return theme === THEME.LIGHT || theme === THEME.DARK ? theme : DEFAULT_THEME
+}
+
 export default {
-  props: {
-    theme: {
-      type: String,
-      required: true
+  data() {
+    return {
+      theme: null
     }
+  },
+  mounted() {
+    this.theme = getInitialTheme()
+    document.documentElement.setAttribute("data-theme", this.theme)
   },
   methods: {
     toggleTheme() {
-      const newTheme =
-        this.theme === "theme-light" ? "theme-dark" : "theme-light"
-      localStorage.setItem("theme", newTheme)
-      this.$emit("themeChanged", newTheme)
+      this.theme = this.theme === THEME.LIGHT ? THEME.DARK : THEME.LIGHT
+      localStorage.setItem("theme", this.theme)
+      document.documentElement.setAttribute("data-theme", this.theme)
     }
   }
 }

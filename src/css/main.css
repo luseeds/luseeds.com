@@ -2,20 +2,20 @@
 @tailwind base;
 @tailwind components;
 
-.theme-light {
+[data-theme="light"] {
   --bg-background-primary: white;
-  --bg-background-secondary: #f7fafc;
+  --bg-background-secondary: white;
   --bg-background-tertiary: #e2e8f0;
 
   --text-copy-primary: #2d3748;
   --text-copy-secondary: #4a5568;
 }
 
-.theme-dark .markdown-body {
+[data-theme="light"] .markdown-body {
   color: #24292e;
 }
 
-.theme-dark {
+[data-theme="dark"] {
   --bg-background-primary: #0d2438;
   --bg-background-secondary: #102c44;
   --bg-background-tertiary: #1e3951;
@@ -24,7 +24,7 @@
   --text-copy-secondary: #e2e8f0;
 }
 
-.theme-dark .markdown-body {
+[data-theme="dark"] .markdown-body {
   color: #cbd5e0;
 }
 

@@ -1,7 +1,6 @@
 <template>
   <div
     class="bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen"
-    :class="theme"
   >
     <header class="border-t-14 border-green-400">
       <nav class="container mx-auto flex flex-wrap justify-between items-center py-4 sm:py-8">
@@ -29,7 +28,7 @@
           :class="isOpen ? 'block' : 'hidden'"
         >
           <li class="mb-6 sm:mb-0 sm:mr-8">
-            <theme-switcher :theme="theme" @themeChanged="updateTheme" />
+            <theme-switcher />
           </li>
           <li class="mb-6 text-center sm:mb-0 sm-mr-8">
             <g-link to="/projects" class="text-copy-primary hover:text-gray-600">Projects</g-link>
@@ -63,21 +62,14 @@ export default {
     ThemeSwitcher,
     Footer
   },
-  mounted() {
-    this.theme = localStorage.getItem("theme") || "theme-light"
-  },
   data() {
     return {
-      isOpen: false,
-      theme: ""
+      isOpen: false
     }
   },
   methods: {
     toggle() {
       this.isOpen = !this.isOpen
-    },
-    updateTheme(theme) {
-      this.theme = theme
     }
   }
 }
