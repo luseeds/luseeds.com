@@ -3,19 +3,19 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       :viewBox="variation.viewBox"
-      :class="`relative z-10 text-${color} -mb-1`"
+      :class="`relative z-10 text-copy-accent -mb-1`"
     >
       <path :d="variation.path" class="fill-current" />
     </svg>
     <h2
       :class="
-        `bg-${color} text-center text-4xl text-white uppercase relative z-20 -mt-1 sm:-mt-4`
+        `bg-background-accent text-center text-4xl text-copy-secondary uppercase relative z-20 -mt-1 sm:-mt-4`
       "
     >{{ title }}</h2>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       :viewBox="variation.viewBox"
-      :class="`relative z-10 text-${color} -mt-1 sm:-mt-4 transform rotate-180`"
+      :class="`relative z-10 text-copy-accent -mt-1 sm:-mt-4 transform rotate-180`"
     >
       <path :d="variation.path" class="fill-current" />
     </svg>
@@ -37,7 +37,7 @@ const VARIANTS = {
 }
 
 export default {
-  props: ["title", "color", "variant"],
+  props: ["title", "variant"],
   computed: {
     variation() {
       return VARIANTS[this.variant] || VARIANTS.smooth

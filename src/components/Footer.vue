@@ -1,14 +1,14 @@
 <template>
   <footer class="bg-green-700">
     <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
-      <a href="/sitemap.xml" class="text-white hover:text-gray-400">Sitemap</a>
+      <a href="/sitemap.xml" class="text-copy-secondary hover:text-copy-accent">Sitemap</a>
       <ul>
         <li class="mt-4">
           <a
             href="https://github.com/luseeds"
             target="_blank"
             rel="noopener"
-            class="text-white hover:text-gray-400 flex items-center"
+            class="text-copy-secondary hover:text-copy-accent flex items-center"
           >
             <svg
               width="20"

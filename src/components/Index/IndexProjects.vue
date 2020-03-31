@@ -1,19 +1,11 @@
 <template>
   <div>
-    <section-delimiter
-      title="Projects"
-      color="green-600"
-      variant="wavy"
-      class="-mt-16"
-      unpurgecss="text-green-600 bg-green-600"
-    />
+    <section-delimiter title="Projects" variant="wavy" class="-mt-16" />
     <div class="overflow-x-hidden">
       <div
-        class="container-inner mx-auto text-xl border-gray-300 border-dotted border-b-8 pb-16 mb-16 relative"
+        class="container-inner mx-auto text-xl border-border-accent border-dotted border-b-8 pb-24 mb-16 relative"
       >
-        <h3 class="font-bold mb-6" id="projects">
-          Here are some projects we've released:
-        </h3>
+        <h3 class="font-bold mb-6" id="projects">Here are some projects we've released:</h3>
 
         <dots-triangle variant="right" class="text-green-400" />
 

@@ -7,13 +7,14 @@
           class="font-bold uppercase text-sm text-gray-600"
         >Back to all projects</g-link>
       </div>
-      <h1 class="text-4xl font-bold leading-tight">{{ $page.project.title }}</h1>
-      <div class="text-xl text-gray-600 mb-4">{{ $page.project.date }}</div>
+      <h1 class="text-4xl font-bold leading-tight mb-8">{{ $page.project.title }}</h1>
       <a
         :href="$page.project.url"
-        class="inline-block text-white p-4 bg-green-500 mb-4 mx-auto rounded"
+        target="_black"
+        rel="noopener"
+        class="inline-block text-copy-secondary p-4 bg-green-500 mb-8 mx-auto rounded"
       >Visit {{ $page.project.title }} website &rarr;</a>
-      <a :href="$page.project.url">
+      <a :href="$page.project.url" target="_black" rel="noopener">
         <g-image :src="$page.project.image" :alt="$page.project.title" />
       </a>
       <div class="markdown-body my-8" v-html="$page.project.content" />
@@ -28,7 +29,6 @@
 query Project ($path: String!) {
   project: project (path: $path) {
     title
-    date (format: "MMMM D, Y")
     url
     content
     image

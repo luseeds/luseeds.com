@@ -7,17 +7,14 @@
         :key="project.id"
         class="project border-gray-400 border-b mb-12"
       >
-        <h2 class="text-3xl font-bold">
-          <g-link :to="project.node.path" class="text-copy-primary">{{ project.node.title }}</g-link>
+        <h2 class="text-3xl font-bold mb-4">
+          <g-link :to="project.node.path" class="text-primary">{{ project.node.title }}</g-link>
         </h2>
         <g-link :to="project.node.path">
           <g-image :src="project.node.image" :alt="project.node.title" />
         </g-link>
-        <div class="text-copy-secondary mt-8 mb-4">
-          <span>{{ project.node.date }}</span>
-        </div>
 
-        <div class="text-lg mb-4">{{ project.node.summary }}</div>
+        <div class="text-lg mt-8 mb-4">{{ project.node.summary }}</div>
 
         <div class="mb-8">
           <g-link :to="project.node.path" class="font-bold uppercase">Read More</g-link>
@@ -47,7 +44,6 @@ query Projects ($page: Int) {
       node {
         id
         title
-        date (format: "DD MMMM Y")
         summary
         path
         image

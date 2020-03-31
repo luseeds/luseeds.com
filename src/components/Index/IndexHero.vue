@@ -2,7 +2,7 @@
   <section class="hero">
     <div class="sm:py-16 relative">
       <h1
-        class="container-inner text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left relative z-10 p-4 sm:p-8 bg-white sm:mx-0 lg:mx-auto"
+        class="container-inner text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left relative z-10 p-4 sm:p-8 bg-background-secondary sm:mx-0 lg:mx-auto"
       >
         <div class="leading-tight">Luseeds.</div>
         <div

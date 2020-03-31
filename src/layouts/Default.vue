@@ -1,12 +1,16 @@
 <template>
   <div
-    class="bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen"
+    class="layout bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen"
   >
     <header class="border-t-14 border-green-400">
       <nav class="container mx-auto flex flex-wrap justify-between items-center py-4 sm:py-8">
         <div class="w-full sm:w-auto">
           <g-link to="/">
-            <g-image src="../../static/logo.png" class="w-40 mx-auto md:mx-0" alt="logo" />
+            <g-image
+              src="../../static/logo.png"
+              class="logo w-40 mx-auto md:mx-0"
+              alt="luseeds logo"
+            />
           </g-link>
         </div>
         <div class="block mx-auto mt-8 sm:hidden">
@@ -27,7 +31,7 @@
           class="uppercase tracking-wide font-bold w-full block flex-grow sm:flex sm:flex-initial sm:w-auto items-center mt-8 sm:mt-0"
           :class="isOpen ? 'block' : 'hidden'"
         >
-          <li class="mb-6 sm:mb-0 sm:mr-8">
+          <li class="mb-6 sm:mb-0 sm:mr-8 text-center">
             <theme-switcher />
           </li>
           <li class="mb-6 text-center sm:mb-0 sm-mr-8">

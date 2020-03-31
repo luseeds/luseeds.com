@@ -9,8 +9,8 @@
         <div>
           <g-image
             src="../../../static/logo.png"
-            alt="logo"
-            class="w-32 h-32 rounded-full mb-8 lg:mb-0"
+            alt="luseeds logo"
+            class="logo w-32 h-32 rounded-full mb-8 lg:mb-0"
           />
         </div>
         <div class="flex-1 text-lg sm:text-xl sm:ml-6 text-justify">
