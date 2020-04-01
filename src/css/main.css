@@ -120,6 +120,18 @@ nav .active {
   filter: grayscale(100%);
 }
 
+.visit-site-link {
+  /*green-500 / green-700 / green-500 */
+  background-image: linear-gradient(to right, #2f855a, #38a169, #2f855a);
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-position: right center;
+}
+.visit-site-link:hover {
+  background-position: left center;
+  @apply text-copy-secondary;
+}
+
 /* purgecss end ignore */
 
 @tailwind utilities;

@@ -4,7 +4,7 @@
       <div class="mb-8">
         <g-link
           to="/projects"
-          class="font-bold uppercase text-sm text-gray-600"
+          class="font-bold uppercase text-sm text-gray-700"
         >Back to all projects</g-link>
       </div>
       <h1 class="text-4xl font-bold leading-tight mb-8">{{ $page.project.title }}</h1>
@@ -12,7 +12,7 @@
         :href="$page.project.url"
         target="_black"
         rel="noopener"
-        class="inline-block text-copy-secondary p-4 bg-green-500 mb-8 mx-auto rounded"
+        class="visit-site-link inline-block text-copy-secondary p-4 mb-8 mx-auto rounded shadow-lg hover:shadow-xl"
       >Visit {{ $page.project.title }} website &rarr;</a>
       <a :href="$page.project.url" target="_black" rel="noopener">
         <g-image :src="$page.project.image" :alt="$page.project.title" />
