@@ -5,7 +5,9 @@
       <div
         class="container-inner mx-auto text-xl border-border-accent border-dotted border-b-8 pb-24 mb-16 relative"
       >
-        <h3 class="font-bold mb-6" id="projects">Here are some projects we've released:</h3>
+        <h3 class="font-bold mb-6" id="projects">
+          Here are some projects we've released:
+        </h3>
 
         <dots-triangle variant="right" class="text-green-400" />
 
@@ -14,7 +16,7 @@
             v-for="project in projects"
             :key="project.key"
             :path="project.path"
-            :image="project.image"
+            :image="project.cover || project.screenshot"
             :imageAlt="project.title"
             :title="project.title"
             :excerpt="project.excerpt"
@@ -34,7 +36,8 @@ query allFeaturedProjects {
         id
         title
         excerpt
-        image
+        cover
+        screenshot
         path
       }
     }
@@ -58,12 +61,13 @@ export default {
       const yourProject = {
         key: "yourProject",
         path: "#",
-        image: "/plus.svg",
+        cover: "/plus.svg",
         imageAlt: "Your project",
         title: "Your project?",
         excerpt: "Feel free to submit your project idea",
         inProgress: true
       }
+      console.warn(this.$static.projects.edges)
       return [
         ...this.$static.projects.edges.map(project => project.node),
         yourProject

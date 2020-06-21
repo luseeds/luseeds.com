@@ -4,7 +4,8 @@ excerpt: Learn how to exploit the system for your own interest
 path: /opportunist
 order: 3
 summary: This website is a place to regroup ideas about how to use the current society/system we live in to our own advantange. It contains tips on how to benefit from the infrastructure in place and become progressively less reliant on it.
-image: ./opportunist.png
+cover: ./opportunist-logo.svg
+screenshot: ./opportunist.png
 url: https://opportunist.luseeds.com
 ---
 

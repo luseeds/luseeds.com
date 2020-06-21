@@ -8,16 +8,23 @@
         class="project border-gray-400 border-b mb-12"
       >
         <h2 class="text-3xl font-bold mb-4">
-          <g-link :to="project.node.path" class="text-primary">{{ project.node.title }}</g-link>
+          <g-link :to="project.node.path" class="text-primary">{{
+            project.node.title
+          }}</g-link>
         </h2>
         <g-link :to="project.node.path">
-          <g-image :src="project.node.image" :alt="project.node.title" />
+          <g-image
+            :src="project.node.cover || project.node.screenshot"
+            :alt="project.node.title"
+          />
         </g-link>
 
         <div class="text-lg mt-8 mb-4">{{ project.node.summary }}</div>
 
         <div class="mb-8">
-          <g-link :to="project.node.path" class="font-bold uppercase">Read More</g-link>
+          <g-link :to="project.node.path" class="font-bold uppercase"
+            >Read More</g-link
+          >
         </div>
       </div>
       <!-- end project -->
@@ -46,7 +53,8 @@ query Projects ($page: Int) {
         title
         summary
         path
-        image
+        cover
+        screenshot
       }
     }
   }

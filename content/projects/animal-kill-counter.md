@@ -4,7 +4,8 @@ excerpt: Witness the numbers of animal killed every seconds
 path: /animal-kill-counter
 order: 2
 summary: This website allows you to witness the crazy rate at which animals are killed every seconds. The goal is to make people re-think their animal consumption based on the negative impact it has.
-image: ./animal-kill-counter.png
+cover: ./animal-kill-counter-logo.svg
+screenshot: ./animal-kill-counter.png
 url: https://animal-kill-counter.luseeds.com
 ---
 
