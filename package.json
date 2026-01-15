@@ -13,7 +13,7 @@
     "axios": "^1.12.0",
     "gridsome": "^0.7.23",
     "install": "^0.13.0",
-    "npm": "^11.4.2",
+    "npm": "^11.7.0",
     "vue-scrollto": "^2.17.1"
   },
   "devDependencies": {
